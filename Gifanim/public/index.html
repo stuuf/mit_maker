@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"></style>
+    <title>Contour GIFs</title>
+    <meta name="description" content="Create animated GIFs from static images or slides for use in presentations, transitions, and more.">
+
+    <script src="gif.js"></script>
+    <script src="gif.worker.js"></script>
+    <script src="opencv.js" type="text/javascript"></script>
+    <script src="imagetracer_v1.2.6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" onload="console.log('anime js loaded')" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <a href="Acknowledgments.txt" id="Acknowledgements" style="display:none;"></a>
+</head>
+<body>
+    <div id="bg"></div>
+        <div class="box">
+            <div class="flex-row">
+                <div class="flex-column">
+                    <div id="error-text">
+                    </div>
+                    <div class="flex-row">
+                        <p id="instructions">
+                            Add an image to generate a contour drawing effect, compiled into GIF format. The process may take a few minutes, depending on the complexity of the image and settings. <br><br> JPEG/JPG, PNG and SVG file types are supported. File size is limited to under 10 MB. For best results, stay on this page while the GIF is being generated.
+                        </p>
+                        <button id="button" onclick="clicked()" disabled><h1 id="button-text">Start</h1></button>
+                    </div>
+
+                    <div id="settings">
+                        <p>
+                            Configurations
+                        </p>
+                        <div class="flex-row">
+                            <label for="duration">Duration:</label>
+                            <output id="output">2.0</output>
+                            <input type="range" min="0.1" max="5" value="2" step="0.1" class="slider" id="duration" oninput="this.previousElementSibling.value = parseFloat(this.value).toFixed(1)">
+                        </div>
+                        <div class="flex-row">
+                            <label for="delay">Delay:</label>
+                            <output id="output">0.5</output>
+                            <input type="range" min="0.1" max="2" value="0.5" class="slider" step="0.1" id="delay" oninput="this.previousElementSibling.value = parseFloat(this.value).toFixed(1)">
+                        </div>
+                        <div class="flex-row">
+                            <label for="stagger">Stagger:</label>
+                            <output id="output">1.0</output>
+                            <input type="range" min="0.1" max="3" value="1" step="0.1" class="slider" id="stagger" oninput="this.previousElementSibling.value = parseFloat(this.value).toFixed(1)">
+                        </div>
+                        <div class="flex-row">
+                            <label for="fade-in-percent">Fade In Percentage:</label>
+                            <output id="output">0.75</output>
+                            <input type="range" min="0.01" max="1" value="0.75" step="0.01" class="slider" id="fade-in-percent" oninput="this.previousElementSibling.value = parseFloat(this.value).toFixed(2)">
+                        </div>
+                        <div class="flex-row">
+                            <label for="background-color">Background Color:</label>
+                            <input type="color" id="background-color" value="#FFFFFF">
+                        </div>
+                        <div class="flex-row">
+                            <label for="max-fps">Maximum FPS:</label>
+                            <output id="output">24</output>
+                            <input type="range" min="1" max="60" value="24" class="slider" id="max-fps" oninput="this.previousElementSibling.value = this.value">
+                        </div>
+                        <div class="flex-row">
+                            <label for="stroke-width">Stroke  Width:</label>
+                            <output id="output">1</output>
+                            <input type="range" min="1" max="20" value="1" class="slider" id="stroke-width" oninput="this.previousElementSibling.value = this.value">
+                        </div>
+                        <div class="flex-row">
+                            <label for="count">Loop Count:</label>
+                            <output id="output">1</output>
+                            <input type="range" min="0" max="5" value="1" class="slider" id="count" oninput="this.previousElementSibling.value = parseInt(this.value) > 0 ? this.value : '&infin;'">
+                        </div>
+                        <p style="font-weight: lighter; font-size: small;">
+                            Settings below are performance related and only apply for raster images
+                        </p>
+                        <div class="flex-row">
+                            <label for="max-paths">Maximum Number of Paths:</label>
+                            <output id="output">1500</output>
+                            <input type="range" min="0" max="5000" value="1500" class="slider" id="max-paths" oninput="this.previousElementSibling.value = parseInt(this.value) > 0 ? this.value : '&infin;'">
+                        </div>
+                        <div class="flex-row">
+                            <label for="min-length">Minimum Path Length:</label>
+                            <output id="output">0</output>
+                            <input type="range" min="0" max="500" value="0" class="slider" id="min-length" oninput="this.previousElementSibling.value = this.value">
+                        </div>
+                        <div class="flex-row">
+                            <label for="max-colors">Maximum Number of Colors:</label>
+                            <output id="output">64</output>
+                            <input type="range" min="1" max="128" value="64" class="slider" id="max-colors" oninput="this.previousElementSibling.value = this.value">
+                        </div>
+                        <div class="flex-row">
+                            <label for="background-tolerance">Background Filtering:</label>
+                            <output id="output">15</output>
+                            <input type="range" min="0" max="100" value="15" class="slider" id="background-tolerance" oninput="this.previousElementSibling.value = this.value">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="display">
+                <div id="drop-area">
+                    <p>Drag or</p>
+                    <label for="file-selector" id="file-label">
+                        select a file
+                        <input type="file" id="file-selector" accept=".jpg, .jpeg, .png, .svg">
+                    </label>
+                </div>
+                <div id="image-container"></div>
+                <div id="progress-container" style="opacity: 0;">
+                </div>
+            </div>
+            <div id="svg-container"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="colorDelta.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="draghandler.js"></script>
+    <script type="text/javascript" src="buttonhandler.js"></script>
+</body>
+</html>
