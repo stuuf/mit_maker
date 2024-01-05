@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC1ABE942A1272F700565060 /* Acknowledgements.txt in Resources */ = {isa = PBXBuildFile; fileRef = DCDC074529F6D09C00F06216 /* Acknowledgements.txt */; };
+		DC3B38BA29A96C0D00833652 /* Project_CrystalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B38B929A96C0D00833652 /* Project_CrystalApp.swift */; };
+		DC3B38BE29A96C0F00833652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3B38BD29A96C0F00833652 /* Assets.xcassets */; };
+		DC3B38C129A96C0F00833652 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3B38C029A96C0F00833652 /* Preview Assets.xcassets */; };
+		DC3B38C929A9883200833652 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B38C829A9883200833652 /* Helpers.swift */; };
+		DC3B38CB29A9D1F100833652 /* SettingsPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B38CA29A9D1F100833652 /* SettingsPopup.swift */; };
+		DC51B0B729AAFC11001137EE /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = DC51B0B629AAFC11001137EE /* KeyboardShortcuts */; };
+		DC51B0BA29AC0394001137EE /* Chromium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51B0B929AC0394001137EE /* Chromium.swift */; };
+		DC70292029F1AB1D00CA8E31 /* Bowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70291F29F1AB1D00CA8E31 /* Bowser.swift */; };
+		DC8F253A29D5F94700AB428D /* WebControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F253929D5F94700AB428D /* WebControllers.swift */; };
+		DC9017B629DDEA6800F95E6F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DC9017B529DDEA6800F95E6F /* SDWebImageSwiftUI */; };
+		DCB216F829B97F140032913D /* DomainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB216F729B97F140032913D /* DomainList.swift */; };
+		DCB216FD29BEAA780032913D /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = DCB216FC29BEAA780032913D /* Introspect */; };
+		DCB417852A0992C6005AA7E2 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = DCB417842A0992C6005AA7E2 /* OrderedCollections */; };
+		DCF5F55A29B3E8F600052F84 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5F55929B3E8F600052F84 /* Test.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC3B38B629A96C0D00833652 /* Crystallization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crystallization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3B38B929A96C0D00833652 /* Project_CrystalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_CrystalApp.swift; sourceTree = "<group>"; };
+		DC3B38BD29A96C0F00833652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC3B38C029A96C0F00833652 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC3B38C229A96C0F00833652 /* Project_Crystal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Project_Crystal.entitlements; sourceTree = "<group>"; };
+		DC3B38C829A9883200833652 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DC3B38CA29A9D1F100833652 /* SettingsPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPopup.swift; sourceTree = "<group>"; };
+		DC51B0B829AB229F001137EE /* Project-Crystallization-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Project-Crystallization-Info.plist"; sourceTree = "<group>"; };
+		DC51B0B929AC0394001137EE /* Chromium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromium.swift; sourceTree = "<group>"; };
+		DC70291F29F1AB1D00CA8E31 /* Bowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowser.swift; sourceTree = "<group>"; };
+		DC8F253929D5F94700AB428D /* WebControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebControllers.swift; sourceTree = "<group>"; };
+		DCB216F729B97F140032913D /* DomainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainList.swift; sourceTree = "<group>"; };
+		DCDC074529F6D09C00F06216 /* Acknowledgements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Acknowledgements.txt; sourceTree = "<group>"; };
+		DCF5F55929B3E8F600052F84 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC3B38B329A96C0D00833652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB417852A0992C6005AA7E2 /* OrderedCollections in Frameworks */,
+				DC9017B629DDEA6800F95E6F /* SDWebImageSwiftUI in Frameworks */,
+				DC51B0B729AAFC11001137EE /* KeyboardShortcuts in Frameworks */,
+				DCB216FD29BEAA780032913D /* Introspect in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC3B38AD29A96C0D00833652 = {
+			isa = PBXGroup;
+			children = (
+				DCDC074529F6D09C00F06216 /* Acknowledgements.txt */,
+				DC51B0B829AB229F001137EE /* Project-Crystallization-Info.plist */,
+				DC3B38B829A96C0D00833652 /* Project Crystal */,
+				DC3B38B729A96C0D00833652 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC3B38B729A96C0D00833652 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC3B38B629A96C0D00833652 /* Crystallization.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC3B38B829A96C0D00833652 /* Project Crystal */ = {
+			isa = PBXGroup;
+			children = (
+				DCF5F55929B3E8F600052F84 /* Test.swift */,
+				DCB216F729B97F140032913D /* DomainList.swift */,
+				DC3B38C229A96C0F00833652 /* Project_Crystal.entitlements */,
+				DC3B38BF29A96C0F00833652 /* Preview Content */,
+				DC3B38B929A96C0D00833652 /* Project_CrystalApp.swift */,
+				DC51B0B929AC0394001137EE /* Chromium.swift */,
+				DC8F253929D5F94700AB428D /* WebControllers.swift */,
+				DC3B38CA29A9D1F100833652 /* SettingsPopup.swift */,
+				DC3B38C829A9883200833652 /* Helpers.swift */,
+				DC3B38BD29A96C0F00833652 /* Assets.xcassets */,
+				DC70291F29F1AB1D00CA8E31 /* Bowser.swift */,
+			);
+			path = "Project Crystal";
+			sourceTree = "<group>";
+		};
+		DC3B38BF29A96C0F00833652 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC3B38C029A96C0F00833652 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC3B38B529A96C0D00833652 /* Crystallization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3B38C529A96C0F00833652 /* Build configuration list for PBXNativeTarget "Crystallization" */;
+			buildPhases = (
+				DC3B38B229A96C0D00833652 /* Sources */,
+				DC3B38B329A96C0D00833652 /* Frameworks */,
+				DC3B38B429A96C0D00833652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crystallization;
+			packageProductDependencies = (
+				DC51B0B629AAFC11001137EE /* KeyboardShortcuts */,
+				DCB216FC29BEAA780032913D /* Introspect */,
+				DC9017B529DDEA6800F95E6F /* SDWebImageSwiftUI */,
+				DCB417842A0992C6005AA7E2 /* OrderedCollections */,
+			);
+			productName = "Project Crystal";
+			productReference = DC3B38B629A96C0D00833652 /* Crystallization.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC3B38AE29A96C0D00833652 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DC3B38B529A96C0D00833652 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = DC3B38B129A96C0D00833652 /* Build configuration list for PBXProject "Crystallization" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC3B38AD29A96C0D00833652;
+			packageReferences = (
+				DC51B0B529AAFC11001137EE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				DCB216FB29BEAA780032913D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				DC9017B429DDEA6800F95E6F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				DCB417832A0992C6005AA7E2 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = DC3B38B729A96C0D00833652 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC3B38B529A96C0D00833652 /* Crystallization */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC3B38B429A96C0D00833652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1ABE942A1272F700565060 /* Acknowledgements.txt in Resources */,
+				DC3B38C129A96C0F00833652 /* Preview Assets.xcassets in Resources */,
+				DC3B38BE29A96C0F00833652 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC3B38B229A96C0D00833652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC51B0BA29AC0394001137EE /* Chromium.swift in Sources */,
+				DC3B38BA29A96C0D00833652 /* Project_CrystalApp.swift in Sources */,
+				DC3B38C929A9883200833652 /* Helpers.swift in Sources */,
+				DC8F253A29D5F94700AB428D /* WebControllers.swift in Sources */,
+				DC70292029F1AB1D00CA8E31 /* Bowser.swift in Sources */,
+				DC3B38CB29A9D1F100833652 /* SettingsPopup.swift in Sources */,
+				DCF5F55A29B3E8F600052F84 /* Test.swift in Sources */,
+				DCB216F829B97F140032913D /* DomainList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC3B38C329A96C0F00833652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC3B38C429A96C0F00833652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DC3B38C629A96C0F00833652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Project Crystal/Project_Crystal.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Project Crystal/Preview Content\"";
+				DEVELOPMENT_TEAM = 7482249BFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Project-Crystallization-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Crystallization;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nickwkang.Project-Crystal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC3B38C729A96C0F00833652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Project Crystal/Project_Crystal.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Project Crystal/Preview Content\"";
+				DEVELOPMENT_TEAM = 7482249BFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Project-Crystallization-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Crystallization;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nickwkang.Project-Crystal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC3B38B129A96C0D00833652 /* Build configuration list for PBXProject "Crystallization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3B38C329A96C0F00833652 /* Debug */,
+				DC3B38C429A96C0F00833652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3B38C529A96C0F00833652 /* Build configuration list for PBXNativeTarget "Crystallization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3B38C629A96C0F00833652 /* Debug */,
+				DC3B38C729A96C0F00833652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC51B0B529AAFC11001137EE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		DC9017B429DDEA6800F95E6F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		DCB216FB29BEAA780032913D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+		DCB417832A0992C6005AA7E2 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC51B0B629AAFC11001137EE /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC51B0B529AAFC11001137EE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		DC9017B529DDEA6800F95E6F /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC9017B429DDEA6800F95E6F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		DCB216FC29BEAA780032913D /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCB216FB29BEAA780032913D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+		DCB417842A0992C6005AA7E2 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCB417832A0992C6005AA7E2 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DC3B38AE29A96C0D00833652 /* Project object */;
+}
