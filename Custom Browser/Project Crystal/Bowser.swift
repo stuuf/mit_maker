@@ -1705,7 +1705,7 @@ struct Bowser: View {
 }
 
 
-//from: https://stackoverflow.com/questions/56610957/is-there-a-method-to-blur-a-background-in-swiftui
+//from: https://developer.apple.com/forums/thread/125183
 struct VisualEffectBackground: NSViewRepresentable {
     private let material: NSVisualEffectView.Material
     private let blendingMode: NSVisualEffectView.BlendingMode
